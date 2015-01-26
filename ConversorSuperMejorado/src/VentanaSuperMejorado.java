@@ -118,7 +118,8 @@ public class VentanaSuperMejorado  extends JFrame{
 				case "YENES":
 					cajaCambio.setText(String.valueOf(euros*yenes));
 					break;
-					
+					default:
+						textoMsg.setText("ES UNA MONEA ANTIGUA");
 					
 				}
 				}
