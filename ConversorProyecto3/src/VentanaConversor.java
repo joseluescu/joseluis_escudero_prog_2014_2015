@@ -92,6 +92,7 @@ public class VentanaConversor extends JFrame{
 						case "YENES":
 							valorConversionPasado =valoresConversion[2];
 							break;
+							
 						}
 						valorCambio.setText(String.valueOf(euros*valorConversionPasado));
 					}
