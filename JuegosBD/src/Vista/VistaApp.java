@@ -9,6 +9,8 @@ import javax.swing.border.EmptyBorder;
 import java.awt.CardLayout;
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
+import javax.swing.JMenuItem;
+import javax.swing.JLabel;
 
 public class VistaApp extends JFrame {
 
@@ -26,11 +28,20 @@ public class VistaApp extends JFrame {
 		JMenu mnPrincipal = new JMenu("Principal");
 		menuBar.add(mnPrincipal);
 		
+		JMenuItem mntmPrincipal = new JMenuItem("Principal");
+		mnPrincipal.add(mntmPrincipal);
+		
 		JMenu mnJuegos = new JMenu("Juegos");
 		menuBar.add(mnJuegos);
 		
+		JMenuItem mntmJuegos = new JMenuItem("Juegos");
+		mnJuegos.add(mntmJuegos);
+		
 		JMenu mnPerfil = new JMenu("Perfil");
 		menuBar.add(mnPerfil);
+		
+		JMenuItem mntmPerfil = new JMenuItem("Perfil");
+		mnPerfil.add(mntmPerfil);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -47,6 +58,9 @@ public class VistaApp extends JFrame {
 		//Llamamos a vista principal
 		getContentPane().add(ventanaPrincipal);
 		
+		JLabel lblNoSale = new JLabel("no sale");
+		lblNoSale.setBounds(307, 278, 46, 14);
+		ventanaPrincipal.add(lblNoSale);
+		
 	}
-
 }

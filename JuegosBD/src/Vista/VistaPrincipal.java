@@ -48,6 +48,10 @@ public class VistaPrincipal extends JPanel {
 		add(contraseña);
 		contraseña.setColumns(10);
 		
+		JLabel lblNoMeSale = new JLabel("no me sale");
+		lblNoMeSale.setBounds(299, 299, 94, 14);
+		add(lblNoMeSale);
+		
 
 	}
 }
